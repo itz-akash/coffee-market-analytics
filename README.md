@@ -139,7 +139,7 @@ The final analytical dataset was created by integrating:
 
 using Python and Pandas before loading into PostgreSQL.
 
-![Merged Dataset](images/Final_Merged.png)
+![Merged Dataset](images/final_merged.png)
 
 ---
 # 🚀 Dashboard Features
