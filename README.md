@@ -17,10 +17,6 @@ Built as part of the **Nium Data Analytics Case Study Assignment**
 
 https://coffee-market-analytics-akash.streamlit.app/
 
-### 💻 GitHub Repository
-
-https://github.com/itz-akash/coffee-market-analytics
-
 </div>
 
 ---
