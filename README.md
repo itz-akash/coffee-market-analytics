@@ -10,7 +10,7 @@
 ![Plotly](https://img.shields.io/badge/Plotly-Visualization-blueviolet?style=for-the-badge&logo=plotly)
 
 
-## 🚀 Live Dashboard
+# 🚀 Live Dashboard
 
 **🌐 Streamlit App:**  
 https://coffee-market-analytics-akash.streamlit.app/
