@@ -1,127 +1,262 @@
 # ☕ Coffee Market Analytics Dashboard
 
-An end-to-end Data Analytics project built using **Python, PostgreSQL, SQL, Streamlit, and Plotly** to analyze global coffee consumption and production trends.
+<div align="center">
 
-This project was completed as part of the **Nium Data Analytics Case Study Assignment**.
+![Python](https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?style=for-the-badge&logo=pandas)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?style=for-the-badge&logo=postgresql)
+![SQL](https://img.shields.io/badge/SQL-Analytics-orange?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?style=for-the-badge&logo=streamlit)
+![Plotly](https://img.shields.io/badge/Plotly-Visualization-blueviolet?style=for-the-badge&logo=plotly)
+
+### End-to-End Coffee Market Analytics using Python, PostgreSQL, SQL, Streamlit & Plotly
+
+Built as part of the **Nium Data Analytics Case Study Assignment**
+
+</div>
+
+---
+
+# 📖 Table of Contents
+
+- Project Overview
+- Business Problem
+- Dashboard Preview
+- Features
+- Tech Stack
+- Project Structure
+- Installation
+- Dashboard Walkthrough
+- Business Insights
+- SQL Queries
+- Database
+- Reflection
+- Future Improvements
+- Dataset Limitation
+- Author
 
 ---
 
 # 📌 Project Overview
 
-ACME Baristas plans to expand into three international markets.
+Coffee consumption continues to grow globally, creating opportunities for international coffee chains.
 
-Using publicly available datasets, this project builds a complete analytics pipeline—from data cleaning and database creation to interactive dashboard development—to identify the most promising markets for expansion.
+This project builds a complete analytics pipeline to help **ACME Baristas** identify the best markets for expansion using publicly available coffee production, consumption, population, and country datasets.
 
-The project demonstrates the complete analytics workflow expected from a Data Analyst.
+The project demonstrates an end-to-end analytics workflow including:
 
----
-
-# 🎯 Business Objectives
-
-The dashboard answers the following business questions:
-
-* Which three markets should ACME Baristas enter to maximize its customer base?
-* Is this the right time to enter the coffee market?
-* What opportunities and risks exist for international expansion?
+- Data Cleaning
+- Data Integration
+- PostgreSQL Database
+- SQL Analytics
+- Interactive Dashboard
+- Business Recommendations
 
 ---
 
-# 🛠 Tech Stack
+# 🎯 Business Problem
 
-* Python
-* Pandas
-* PostgreSQL
-* SQL
-* Streamlit
-* Plotly
-* GitHub
+ACME Baristas plans to expand internationally.
 
----
+The objective was to answer:
 
-# 📂 Project Structure
-
-```
-coffee-market-analytics/
-
-│
-├── dashboard/
-│     └── app.py
-│
-├── data/
-│     ├── raw/
-│     └── processed/
-│
-├── database/
-│     └── coffee_market.sql
-│
-├── notebooks/
-│     └── 01_data_exploration.ipynb
-│
-├── sql/
-│     ├── 01_market_summary.sql
-│     ├── 02_top10_markets.sql
-│     └── 03_market_trends.sql
-│
-├── images/
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
+- Which 3 markets should ACME enter?
+- Is this a good time to expand?
+- What opportunities and risks exist?
+- Which countries have the strongest coffee ecosystem?
 
 ---
 
 # 📊 Dashboard Preview
 
-## Complete Dashboard
+## Dashboard Overview
 
 ![Dashboard](images/dashboard_overview.png)
 
 ---
 
-## KPI Overview
+## KPI Cards
 
-![KPI Cards](images/kpi_cards.png)
+![KPI](images/kpi_cards.png)
 
 ---
 
 ## Global Coffee Consumption Trend
 
-![Market Trend](images/market_trend_year_by_year.png)
+![Trend](images/market_trend_year_by_year.png)
 
 ---
 
-## Top Coffee Consuming Markets
+## Top Coffee Markets
 
-![Top Markets](images/top10_markets.png)
+![Markets](images/top10_markets.png)
 
 ---
 
-## Top Coffee Producing Countries
+## Top Coffee Producers
 
 ![Production](images/production_graph.png)
 
 ---
 
-## Coffee Market Activity Distribution
+## Coffee Market Activity
 
-![Activity Distribution](images/activity_distribution.png)
+![Activity](images/activity_distribution.png)
 
 ---
 
-## Global Coffee Consumption Map
+## Global Consumption Map
 
-![World Map](images/world_map.png)
+![Map](images/world_map.png)
 
 ---
 
 ## Executive Summary
 
-![Business Insights](images/business_insights.png)
+![Insights](images/business_insights.png)
 
 ---
 
-# 📈 Key Insights
+# 🚀 Dashboard Features
+
+✔ Interactive Streamlit Dashboard
+
+✔ Year Filter
+
+✔ KPI Cards
+
+✔ Coffee Consumption Trend
+
+✔ Top Coffee Consuming Countries
+
+✔ Top Coffee Producing Countries
+
+✔ Coffee Activity Distribution
+
+✔ Global Coffee Consumption Map
+
+✔ Business Insights
+
+✔ CSV Download
+
+✔ PostgreSQL Integration
+
+✔ SQL Driven Analytics
+
+---
+
+# 🛠 Technology Stack
+
+| Tool | Purpose |
+|------|----------|
+| Python | Data Cleaning & Processing |
+| Pandas | Data Wrangling |
+| PostgreSQL | Database |
+| SQL | Data Transformation |
+| Plotly | Interactive Visualizations |
+| Streamlit | Dashboard |
+| Git & GitHub | Version Control |
+
+---
+
+# 📂 Project Structure
+
+```text
+coffee-market-analytics/
+
+├── dashboard/
+│      app.py
+│
+├── data/
+│      raw/
+│      processed/
+│
+├── database/
+│      coffee_market.sql
+│
+├── notebooks/
+│      01_data_exploration.ipynb
+│
+├── sql/
+│      01_market_summary.sql
+│      02_top10_markets.sql
+│      03_market_trends.sql
+│
+├── images/
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+# ▶ Installation
+
+Clone Repository
+
+```bash
+git clone https://github.com/itz-akash/coffee-market-analytics.git
+```
+
+Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Dashboard
+
+```bash
+streamlit run dashboard/app.py
+```
+
+---
+
+# 📈 Dashboard Walkthrough
+
+The dashboard provides interactive insights into worldwide coffee markets.
+
+It includes:
+
+- Total Countries
+- Domestic Consumption
+- Production
+- Population
+
+along with
+
+- Historical Consumption Trend
+- Top Coffee Markets
+- Coffee Production Analysis
+- Market Distribution
+- Global Consumption Map
+- Executive Summary
+
+Users can filter the dashboard by Market Year and download the filtered dataset.
+
+---
+
+# 💼 Business Recommendations
+
+Based on the analysis, the recommended expansion markets are:
+
+🥇 Brazil
+
+🥈 United States
+
+🥉 Japan
+
+### Why?
+
+- Large customer base
+- Strong domestic coffee demand
+- Mature coffee ecosystem
+- Long-term market potential
+
+---
+
+# 📊 Key Insights
 
 ### Highest Coffee Consumer
 
@@ -145,45 +280,38 @@ Brazil
 
 ---
 
-### Recommended Markets
+### Market Attributes
 
-🥇 Brazil
-
-🥈 United States
-
-🥉 Japan
-
-These markets were selected because of:
-
-* Strong domestic coffee demand
-* Large customer base
-* Mature coffee ecosystem
-* High long-term market potential
+19 Coffee Market Indicators
 
 ---
 
-# 🗄 Database
+# 🗄 PostgreSQL Database
 
-The cleaned dataset was stored in PostgreSQL.
+The cleaned dataset was imported into PostgreSQL.
 
-Database dump included:
+The repository includes:
 
 ```
 database/
-└── coffee_market.sql
+coffee_market.sql
 ```
+
+allowing the database to be restored using pg_restore or pgAdmin.
 
 ---
 
-# 📝 SQL Queries Included
+# 📝 SQL Queries
 
-The repository contains SQL transformation queries used during analysis.
+Three SQL analytical queries are included.
 
-* Market Summary
-* Top 10 Coffee Markets
-* Global Market Trends
+- Market Summary
 
-Located in:
+- Top 10 Coffee Markets
+
+- Global Market Trends
+
+Located inside:
 
 ```
 sql/
@@ -191,130 +319,119 @@ sql/
 
 ---
 
-# ▶️ How to Run
-
-## 1 Clone Repository
-
-```bash
-git clone https://github.com/itz-akash/coffee-market-analytics.git
-```
-
----
-
-## 2 Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 3 Run Streamlit Dashboard
-
-```bash
-streamlit run dashboard/app.py
-```
-
----
-
 # 📚 Datasets Used
 
-* USDA Coffee Market Dataset
-* World Bank Population Dataset
-* Country Codes Dataset
+- USDA Coffee Dataset
+- World Bank Population Dataset
+- Country Codes Dataset
 
 ---
 
-# 💡 Challenges Faced
+# 💡 Challenges
 
-* Matching country names across three independent datasets
-* Handling missing values and inconsistent country codes
-* Designing a clean PostgreSQL schema
-* Building an interactive dashboard entirely using Python libraries
-* Selecting meaningful business KPIs from multiple coffee market attributes
+- Standardizing country names
+- Joining three independent datasets
+- Missing country codes
+- Handling missing values
+- Creating a scalable PostgreSQL schema
+- Building a responsive dashboard using Python only
 
 ---
 
 # 📌 Assumptions
 
-* Country names were standardized before merging.
-* Population values were assumed to represent the latest available record.
-* Coffee consumption values are reported in thousand bags as provided by the USDA dataset.
-* Market recommendations are based on available historical data.
+- Country names were standardized before merging.
+
+- Latest available population values were used.
+
+- Coffee consumption values are reported in Thousand Bags.
+
+- Market recommendations are based on available historical data.
 
 ---
 
 # 🚀 Future Improvements
 
-If additional time and more recent data were available, the project could be extended with:
+Given additional time and richer datasets, the project could be extended with:
 
-* Sales forecasting using Machine Learning
-* Coffee demand prediction
-* Profitability analysis
-* Market segmentation
-* Time-series forecasting
-* Interactive drill-down dashboards
-* Automated ETL pipeline
+- Machine Learning Forecasting
+
+- Demand Prediction
+
+- Coffee Shop Density Analysis
+
+- Revenue Forecasting
+
+- Customer Segmentation
+
+- Profitability Analysis
+
+- Automated ETL Pipeline
 
 ---
 
 # 📅 Dataset Limitation
 
-The latest publicly available dataset used for this project contains limited information beyond 2024.
+The publicly available coffee dataset contains limited information beyond **2024**, with no complete market data for **2025**.
 
-If complete 2025 market data had been available, additional analyses such as year-over-year growth, demand forecasting, and more impactful business recommendations could have been developed.
+If comprehensive 2025 data had been available, additional analyses such as year-over-year growth, demand forecasting, market forecasting, and more impactful strategic recommendations could have been developed.
 
-This limitation comes from the source data rather than the implementation of the analytics pipeline.
-
----
-
-# 👨‍💻 Reflection
-
-### Design Choices
-
-The project follows a complete analytics workflow consisting of:
-
-* Data Cleaning using Python
-* Data Integration using Pandas
-* PostgreSQL Database Creation
-* SQL Transformations
-* Interactive Streamlit Dashboard
-* Business Recommendation Generation
-
-This approach keeps the project modular, reproducible, and easy to extend.
+This limitation is due to the availability of the public source data rather than the implementation of the analytics solution.
 
 ---
 
-### Challenges
+# 📝 Reflection
 
-The most significant challenge was combining three datasets that used different country names and codes. Standardizing these values before merging ensured accurate analysis and visualization.
+## Design Choices
 
----
+A modular analytics pipeline was created using Python for preprocessing, PostgreSQL for storage, SQL for transformations, and Streamlit for interactive visualization.
 
-### Additional Data That Would Strengthen Insights
-
-* Coffee pricing
-* Import/export revenue
-* Consumer spending
-* GDP
-* Inflation
-* Retail coffee sales
-* Number of coffee shops
-* Coffee consumption per capita
-
-These datasets would enable more comprehensive market opportunity analysis.
+This approach improves scalability, maintainability, and reproducibility.
 
 ---
 
-# 👤 Author
+## Challenges
 
-**Akash Dubey**
+The biggest challenge was merging three datasets with inconsistent country names and codes.
 
-Data Analyst | Python | SQL | PostgreSQL | Streamlit | Plotly
+Country standardization and data cleaning ensured accurate joins across all datasets.
 
-GitHub:
+---
+
+## Additional Data That Would Improve Insights
+
+- Coffee Prices
+
+- GDP
+
+- Inflation
+
+- Coffee Shop Count
+
+- Retail Sales
+
+- Import Revenue
+
+- Export Revenue
+
+- Per Capita Coffee Consumption
+
+These would enable stronger market opportunity analysis and forecasting.
+
+---
+
+# 👨‍💻 Author
+
+## Akash Dubey
+
+**Data Analyst**
+
+Python • SQL • PostgreSQL • Streamlit • Plotly • Pandas
+
+GitHub
+
 https://github.com/itz-akash
 
 ---
 
-⭐ If you found this project useful, feel free to star the repository.
+⭐ If you found this project useful, consider giving it a star!
